@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Config\\":"app/config",
+            "Db\\":"src/db",
+            "Models\\":"src/models",
+            "Controllers\\":"src/controllers",
+            "Login\\":"src/login"
+        }
+    },
+    "require": {
+        "facebook/graph-sdk": "~5.0"
+    }
+}
