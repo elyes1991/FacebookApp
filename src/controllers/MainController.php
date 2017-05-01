@@ -9,16 +9,17 @@ class MainController {
 
     /**
      * Constructor.
+     * @param FacebookConnection $facebookConnection Instance of FacebookConnection class.
      */
-    public function __construct() {
-        
+    public function __construct(FacebookConnection $facebookConnection) {
+        $this->facebookConnection = $facebookConnection;
     }
 
     /**
      * Show login page.
      */
     public function loginAction() {
-        //TODO get the login url
+        $loginUrl = $this->facebookConnection->getLoginUrl();
         $params = array();
         $params[] = array("key" => "loginUrl", "value" => $loginUrl);
         $this->renderView('/../templates/Login.php', $params);
