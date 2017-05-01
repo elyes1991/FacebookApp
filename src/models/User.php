@@ -41,13 +41,13 @@ class User {
     /**
      * @var boolean
      */
-    private $isActive;
+    private $isActive = true;
 
     /**
      * Constructor.
      */
     public function __construct() {
-        $this->isActive = true;
+        
     }
 
     /**
@@ -120,6 +120,7 @@ class User {
         $this->facebookId = (isset($data['facebookId'])) ? $data['facebookId'] : null;
         $this->facebookToken = (isset($data['facebookToken'])) ? $data['facebookToken'] : null;
         $this->tokenExpirationDate = (isset($data['tokenExpirationDate'])) ? $data['tokenExpirationDate'] : null;
+        $this->isActive = (isset($data['isActive'])) ? $data['isActive'] : null;  
     }
 
     /**
