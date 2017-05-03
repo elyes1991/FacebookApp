@@ -1,5 +1,5 @@
 # FacebookApp
-PHP Basic Web Application allows a user to connect via facebook and to check user facebook name and picture
+PHP Basic Web Application allows a user to connect via facebook and to display user facebook name and picture
 ------
 * #### /app  
     The application configuration
