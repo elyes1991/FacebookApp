@@ -1,11 +1,18 @@
 {
+    "scripts": {
+        "post-install-cmd": [
+            "ComposerScript\\init_db::createDatabase",
+            "ComposerScript\\init_db::createUserTable"
+        ]
+    },
     "autoload": {
         "psr-4": {
             "Config\\":"app/config",
             "Db\\":"src/db",
             "Models\\":"src/models",
             "Controllers\\":"src/controllers",
-            "Login\\":"src/login"
+            "Login\\":"src/login",
+            "ComposerScript\\":""
         }
     },
     "require": {
