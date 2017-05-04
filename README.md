@@ -26,4 +26,5 @@ Install the dependencies.
 ```sh
 $ cd FacebookApp
 $ Composer install
+$ Composer dump-autoload -o
 ```
