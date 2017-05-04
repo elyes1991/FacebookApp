@@ -4,6 +4,7 @@ namespace Controllers;
 
 use Login\FacebookConnection;
 use Models\UserRepository;
+use Config\Config;
 
 /**
  * Class MainController.
@@ -13,6 +14,7 @@ class MainController {
     /**
      * Constructor.
      * @param FacebookConnection $facebookConnection Instance of FacebookConnection class.
+     * @param UserRepository $userRepository Instance of UserRepository class.
      */
     public function __construct(FacebookConnection $facebookConnection, UserRepository $userRepository) {
         $this->facebookConnection = $facebookConnection;
@@ -61,7 +63,7 @@ class MainController {
      * Show Error page.
      */
     public function renderErrorPage() {
-        //header('Status: 404 Not Found');
+        header('Status: 404 Not Found');
         $this->renderView('/../templates/404.php');
     }
 
