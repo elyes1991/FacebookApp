@@ -7,12 +7,12 @@
     },
     "autoload": {
         "psr-4": {
+            "ComposerScript\\":"",
             "Config\\":"app/config",
             "Db\\":"src/db",
             "Models\\":"src/models",
             "Controllers\\":"src/controllers",
-            "Login\\":"src/login",
-            "ComposerScript\\":""
+            "Login\\":"src/login"  
         }
     },
     "require": {
