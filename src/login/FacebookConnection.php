@@ -4,6 +4,7 @@ namespace Login;
 
 use Facebook\Facebook;
 use Config\Config;
+use Models\User;
 
 /**
  * FacebookConnection class collect facebook profile data from facebook apis.
