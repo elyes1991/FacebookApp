@@ -1,4 +1,4 @@
-<?php $title = "Profile" ?>
+<?php $title = "Profile - ".$name ?>
 
 <?php ob_start() ?>
 
