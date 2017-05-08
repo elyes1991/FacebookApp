@@ -34,7 +34,7 @@ class init_db
                 created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 updated TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                 isActive boolean not null default 1
-                );
+                ) ENGINE=InnoDB;
                 ALTER TABLE `User` ADD INDEX `facebook_id` (`facebookId`);
                 ALTER TABLE `User` ADD INDEX `user_id` (`id`);";
         $database->execute($sql);
